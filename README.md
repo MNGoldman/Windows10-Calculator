@@ -14,10 +14,12 @@ The point of this project was never to reinvent the wheel, rather to strengthen 
 
 ## Screenshot
 
-My Window's 10 Calculator
+### My Window's 10 Calculator
+
 ![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/blob/master/images/MyWindows10Calculator.JPG)
 
-The Window's 10 Calculator
+### The Window's 10 Calculator
+
 ![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/blob/master/images/RealWindows10Calculator.JPG)
 
 ## Technologies
@@ -28,7 +30,7 @@ The Window's 10 Calculator
 
 ## Setup
 
-The live version of the website can be seen here.
+The live version of the website can be seen [here](https://mngoldman.github.io/Windows10-Calculator/).
 
 ## Status
 
