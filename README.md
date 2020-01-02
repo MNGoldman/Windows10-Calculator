@@ -14,11 +14,13 @@ The point of this project was never to reinvent the wheel, rather to strengthen 
 
 ## Screenshot
 
-My Window's 10 Calculator
-![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/images/MyWindows10Calculator.JPG)
+### My Window's 10 Calculator
 
-The Window's 10 Calculator
-![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/images/RealWindows10Calculator.JPG)
+![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/blob/master/images/MyWindows10Calculator.JPG)
+
+### The Window's 10 Calculator
+
+![Example screenshot](https://github.com/MNGoldman/Windows10-Calculator/blob/master/images/RealWindows10Calculator.JPG)
 
 ## Technologies
 

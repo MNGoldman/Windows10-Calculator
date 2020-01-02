@@ -1,4 +1,4 @@
-  // 💯 ✌
+// 💯 ✌
 class Calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement
@@ -32,7 +32,7 @@ class Calculator {
     let decimalDigits = stringNum.split('.')[1]
     let integerDisplay
 
-    isNaN(integerNum) ? integerDisplay = "." : integerDisplay = integerNum.toLocaleString('en', {
+    integerDisplay = integerNum.toLocaleString('en', {
       maximumFractionDigits: 0
     })
 
@@ -77,15 +77,16 @@ class Calculator {
     let computation
     let curr = parseFloat(this.currentOperand)
     let prev = parseFloat(this.previousOperand)
-    if (isNaN(curr)) return
 
-    switch (this.operator) { case `${this.operator}`:
-      computation = mathFunctions[this.operator](prev, curr); break; default: return; }
-
-    // Update variables
-    this.currentOperand = computation
-    this.previousOperand = ''
-    this.operator = undefined
+    if (typeof this.operator === 'undefined') return
+    computation = mathFunctions[this.operator](prev, curr);
+    if (computation === Infinity || isNaN(computation)) {
+      alert("Overflow or Logically Impossible Error.")
+      return this.clear()
+    }
+    // Update operands, operator, and pass compute value to display
+    this.clear()
+    this.appendNumber(computation)
   }
 }
 
@@ -112,7 +113,8 @@ mathFunctions = {
   '÷'(prev, curr) {return curr === 0 ? 0 : prev / curr},
   '−'(prev, curr) {return prev - curr},
   '+'(prev, curr) {return prev + curr},
-  '×'(prev, curr) {return prev * curr}
+  '×'(prev, curr) {return prev * curr},
+  '%'(prev, curr) {return prev * (curr / 100)}
 };
 
 // Initalize Event Listeners
