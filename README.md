@@ -30,7 +30,7 @@ The point of this project was never to reinvent the wheel, rather to strengthen 
 
 ## Setup
 
-The live version of the website can be seen [here](https://mngoldman.github.io/Windows10-Calculator/).
+The live version of the website can be seen [here](https://mac-mann.github.io/Windows10-Calculator/).
 
 ## Status
 
